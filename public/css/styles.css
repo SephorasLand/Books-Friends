@@ -1,0 +1,145 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 1.5rem;
+  color: #5a5a5a;
+  line-height: 1.5;
+}
+
+.navbar {
+    background-color: #80BCBD;
+}
+.navbar-brand:hover {
+  text-shadow: 1px 1px 2px #000;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+.form-inline {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.form-control:focus {
+  border-color: #4dccc6;
+}
+.image-header {
+    position: relative;
+    display: inline-block;
+}
+
+.header-privacy{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #FEEFAD;
+    padding:10px;
+}
+
+.image-header img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.7;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: #fff; 
+    color: #000; 
+    padding: 10px 20px; 
+    font-size: 20px; 
+    text-align: center;
+    border-radius: 25px;
+}
+
+.form {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    transition: transform 0.2s;
+    width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #555;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #4CAF50;
+    width: 100%;
+    font-size: 16px;
+}
+
+.privacy {
+    padding: 30px;
+}
+
+
+/*SEARCH BOX*/
+.search-container {
+  float: right;
+}
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}

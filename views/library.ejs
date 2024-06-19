@@ -1,0 +1,58 @@
+<%- include('partials/header') %>
+
+<%- include('partials/navbar') %>
+<script>var books = "<%= books %>";</script>
+
+
+<main role="main" style="padding-top: 80px;">
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1>My library</h1>
+        <p class="lead text-muted">
+          Here you will find the books you've already uploaded for exchange, edit them, and add new ones.
+        </p>
+        <p>
+          <a
+            href="newBook"
+            class="btn btn-primary my-2 showFormNewBook">Add a new book</a>
+        </p>
+      </div>
+    </section>
+    <% books.forEach((book) => { %>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="../images/La_biblioteca_de_la_medianoche.jpeg" data-holder-rendered="true">
+                <div class="card-body">
+                <p class="card-text">
+                  <%= book.title %>
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary">
+                      View
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary">
+                      Edit
+                    </button>
+                  </div>
+                  <small class="text-muted">Added on May 4th 2024</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% }) %>
+  </main>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,51 @@
+<%- include('partials/header') %>
+
+    <%- include('partials/navbar') %>
+
+        <main role="main" style="padding-top: 80px;">
+            <section class="jumbotron text-center">
+                <div class="container">
+                    <h1>Add a new book to the library</h1>
+                    <p>
+                </div>
+
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                        <div class="card" style="border-radius: 15px;">
+
+
+                            <%# NEW BOOK FORM %>
+                                <form action="/newBook" method="post">
+
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <input type="text" placeholder="Book title" id="form3Example1cg"
+                                            class="form-control form-control-lg" name="bookTitle" />
+                                    </div>
+
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <input type="text" placeholder="Book author" id="form3Example3cg"
+                                            class="form-control form-control-lg" name="bookAuthor" />
+                                    </div>
+                                    
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <input type="image" placeholder="Image of the book" id="form3Example4cg"
+                                            class="form-control form-control-lg" name="bookImage" />
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-center">
+                                        <button type="submit" data-mdb-button-init data-mdb-ripple-init
+                                            class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Add
+                                            book</button>
+                                    </div>
+                                </form>
+                                <%# END OF NEW BOOK FORM %>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <%- include('partials/footer') %>
